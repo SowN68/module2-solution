@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>modul2-solution</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,intial-scale=1.0">
+      <style>
+            *{
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+            }
+            h1{
+                  text-align: center;
+                  font-size: 100px;
+                  margin: 50px;
+                  font-weight: bold;
+            }
+            .food{
+                  width: 25%;
+                  border: 3px solid black;
+                  background: lightgray;
+                  float: left;
+                  margin: 10px 20px;
+            }
+            .food h2{
+                  text-align: center;
+                  position: relative;
+                  float: right;
+                  margin-top: -1px;
+                  margin-right: -1px;
+                  border-left: 3px solid black;
+                  border-bottom: 3px solid black;
+                  top: 0;
+                  padding: 2px 20px;
+                  right: 0;
+            }
+            .food p{
+                  padding: 15px 15px;
+                  margin-top: 30px;
+            }
+            .chicken h2{
+                  background-color: lightpink;
+            }
+            .beef h2{
+                  background-color: lightcoral;
+                  color: white;
+            }
+            .sushi h2{
+                  background-color: lightyellow;
+            }
+            @media (min-width : 992px){
+                  .food{
+                        margin: 20px;
+                        justify-content: center;
+                        justify-items: center;
+                        align-content: center;
+                        align-items: center;
+                  }
+                  .chicken{
+                        width: 25%;
+                  }
+                  .beef{
+                        width: 25%;
+                  }
+                  .sushi{
+                        width: 25%;
+                  }
+            }
+            @media (min-width : 768px) and (max-width : 991px){
+                  .food{
+                        margin-left: 20px;
+                        margin-right: 20px;
+                  }
+                  .chicken{
+                        margin-right: 20px;
+                        width: 40%;
+                        
+                  }
+                  .beef{
+                        width: 40%;
+                  }
+                  .sushi{
+                        width: 86%;
+                  }
+            }
+            @media (max-width: 767px)
+            {
+
+                  h1{
+                        font-size: 40px;
+                  }
+                  .food{
+                        align-items: center;
+                  }
+                  .chicken{
+                        width: 50%;
+                  }
+                  .beef{
+                        width: 50%;
+                  }
+                  .sushi{
+                        width: 50%;
+                  }
+            }
+      </style>
+</head>
+<body>
+      <header>
+            <h1>OUR MENU</h1>
+            <div class="box">
+                  <div class="food chicken">
+                        <h2>Chicken</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div class="food beef">
+                        <h2>Beef</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div class="food sushi">
+                        <h2>Sushi</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+            </div>
+      </header>
+</body>
+</html>
